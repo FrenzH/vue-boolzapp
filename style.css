@@ -32,6 +32,8 @@
   #messages-viewport {
     width: 68%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
 
@@ -51,7 +53,7 @@
     vertical-align: middle;
   }
 
-  #username{
+  .username{
     
     vertical-align: middle;
   }
@@ -108,4 +110,39 @@
 #contacts-container{
     overflow-y: scroll;
     
+}
+
+#contact-panel{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    background-color: #eaeaea;
+    
+    
+}
+
+#message-panel-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#message-panel-options i{
+    padding: 0 10px;
+    color: #b1b1b1;
+
+    
+
+}
+
+#message-container{
+    height: 80%;
+    background-color: black;
+    overflow-y: scroll;
+}
+
+#message-input-panel{
+    height: 10%;
+    background-color: brown;
 }
