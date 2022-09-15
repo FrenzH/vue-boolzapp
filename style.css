@@ -1,0 +1,111 @@
+/* generics */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  /* utilities */
+  
+  /* content */
+
+
+
+  #web-app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  }
+
+  #contacts-viewport{
+    width: 32%;
+    height: 100%;
+    background-color: #eaeaea ;
+    
+  }
+
+  #messages-viewport {
+    width: 68%;
+    height: 100%;
+  }
+
+
+  #user-panel{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    background-color: #eaeaea;
+  }
+
+  .users-images{
+    width: 45px;
+    height: 45px;
+    border-radius:50%;
+    background-color: red;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #username{
+    
+    vertical-align: middle;
+  }
+
+#panel-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#panel-options i{
+    padding: 0 10px;
+    color: #b1b1b1;
+
+}
+
+#desktop-alerts{
+    background-color: #8edafc;
+    height: 70px;
+}
+#desktop-alerts div{
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+    
+}
+
+#desktop-alerts div i{
+    vertical-align: middle;
+    padding: 14px 12px;
+    background-color: white;
+    border-radius: 50%;
+    color: #8edafc;
+}
+
+#desktop-alerts div h3{
+    font-size: 0.8rem;
+    vertical-align: middle;
+}
+#desktop-alerts div a {
+    font-size: 0.8rem;
+    vertical-align: middle;
+    color: #6496ac;
+}
+
+
+#search-contacts{
+    background-color:#eaeaea;
+    padding: 4px;
+}
+
+#contacts-container{
+    overflow-y: scroll;
+    
+}
