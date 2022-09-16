@@ -60,6 +60,19 @@
                 </div>
 
                 <div id="contacts-container">
+                    <div v-for="(items,index) in contacts" :class="{active : activeIndex===index}" @click="getActive(index)">
+                        <div class="userImg-wh">
+                            <img :src="items.userImg" alt="">
+                        </div>
+                        <div>
+                            <h3>{{ items.name }}</h3>
+                            <h10>Ultimo messaggio inviati</h10>
+
+                        </div>
+                    </div>
+                    
+                     
+                    
 
                 </div>
 
