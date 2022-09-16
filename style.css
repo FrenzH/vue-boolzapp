@@ -144,8 +144,10 @@
 
 #message-container{
     height: 100%;
-    background-color: black;
+    background-color: white;
     overflow-y: scroll;
+    
+    
 }
 
 #message-input-panel{
@@ -172,3 +174,9 @@
   background-color:#e9ebeb;
 }
 
+
+
+#received-message{
+  height: 100px;
+  background-color: #8edafc;
+}
