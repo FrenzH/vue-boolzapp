@@ -146,7 +146,8 @@
     height: 100%;
     background-color: white;
     overflow-y: scroll;
-    
+    display: flex;
+  
     
 }
 
@@ -179,4 +180,9 @@
 #received-message{
   height: 100px;
   background-color: #8edafc;
+}
+
+#message-container div{
+flex-grow: 1;
+
 }

@@ -100,7 +100,9 @@
 
                 <div id="message-container">
                     <div id="received-message" >
-                        <div v-for="message in contacts[activeIndex].messages" v-if="message.status==='received'">{{ message.message}}</div>
+                        <div v-for="message in contacts[activeIndex].messages" v-if="message.status==='received'">
+                            {{ message.message}}
+                        </div>
                         
                           
                         
@@ -109,7 +111,12 @@
 
 
 
-                    <div id="sent-message"></div>
+                    <div id="sent-message">
+                        <div v-for="message in contacts[activeIndex].messages" v-if="message.status==='sent'">
+                            {{ message.message}}
+                        </div>
+
+                    </div>
 
 
                 </div>
