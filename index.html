@@ -54,13 +54,13 @@
                 <div id="search-contacts">
 
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input  type="text">
+                    <input  type="text" v-model="searchContacts">
 
 
                 </div>
 
                 <div id="contacts-container">
-                    <div v-for="(items,index) in contacts" :class="{active : activeIndex===index}" @click="getActive(index)">
+                    <div v-show="searchName(items)" v-for="(items,index) in contacts" :class="{active : activeIndex===index}" @click="getActive(index)">
                         <div class="userImg-wh">
                             <img :src="items.userImg" alt="">
                         </div>
@@ -70,6 +70,7 @@
 
                         </div>
                     </div>
+                    <!-- <div v-show="index.name.includes(searchContacts)"></div> -->
                     
                      
                     

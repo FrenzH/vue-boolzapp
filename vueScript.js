@@ -221,6 +221,7 @@ const app = new Vue(
         data:{
             contacts,
             activeIndex:0,
+            searchContacts:'',
             
         },
         methods:{
@@ -230,7 +231,16 @@ const app = new Vue(
                 
                 
                 
+            },
+            searchName : function(items){
+                
+                if(items.name.toLowerCase().includes(this.searchContacts.toLowerCase())||items.name.toLowerCase()===this.searchContacts.toLowerCase()){
+                    return true;
+                }
+                else return false;
+                
             }
+
         }
     }
 )
